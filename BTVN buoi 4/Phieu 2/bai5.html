@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial- scale 1.0">
+    <title>Bai 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu>li {
+            position: relative;
+            background-color: rgb(30, 30, 188);
+            padding: 20px;
+            list-style: none;
+            width: 200px;
+            border-top: 1 px solid rgb(105, 105, 105);
+        }
+
+        .menu>li:hover {
+            background-color: rgb(186, 19, 19);
+        }
+
+        .menu>li p {
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu-child {
+            position: absolute;
+            top: 0;
+            left: 200px;
+            list-style-type: none;
+            width: 200px;
+            background-color: rgb(18, 18, 168);
+            display: none;
+        }
+
+        li:hover .menu-child {
+            display: block;
+        }
+
+        .menu-child>li {
+            padding: 20px;
+            border-top: 1px solid rgb(105, 105, 105);
+        }
+
+
+        .menu-child>li:hover {
+            background-color: rgb(184, 25, 25);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li>
+            <p>Tính trị-xã hội</p>
+            <ul class="menu-child">
+                <li>
+                    <p>Thư viện pháp luật</p>
+                </li>
+                <li>
+                    <p>Sống khoẻ</p>
+                </li>
+                <li>
+                    <p>Pháp luật</p>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <p> Thế giới</p>
+            <ul class="menu-child">
+                <li>
+                    <p>Thư viện pháp luật</p>
+                </li>
+                <li>
+                    <p>Sống khoẻ</p>
+                </li>
+                <li>
+                    <p>Pháp luật</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p> Nhịp sống trẻ</p>
+            <ul class="menu-child">
+                <li>
+                    <p>Thư viện pháp luật</p>
+                </li>
+                <li>
+                    <p>Sống khoẻ</p>
+                </li>
+                <li>
+                    <p>Pháp luật</p>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <p> Giáo dục </p>
+            <ul class="menu-child">
+                <li>
+                    <p>Thư viện pháp luật</p>
+                </li>
+                <li>
+                    <p>Sống khoẻ</p>
+                </li>
+                <li>
+                    <p>Pháp luật</p>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <p>Kinh tế</p>
+            <ul class="menu-child">
+                <li>
+                    <p>Thư viện pháp luật</p>
+                </li>
+                <li>
+                    <p>Sống khoẻ</p>
+                </li>
+                <li>
+                    <p>Pháp luật</p>
+                </li>
+
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" , content="IE=edge">
+    <meta name="viewport" content="width=divice-width, initial-scale 1.0">
+    <style>
+        div {
+            word-spacing: 15px;
+            background-color: rgb(140, 230, 230);
+        }
+
+
+        .menu {
+            display: flex;
+            list-style: none;
+            position: relative;
+
+        }
+
+        .menu>li {
+            background-color: blue;
+            padding: 20px;
+            border-right: 1px solid rgb(99, 99, 99);
+        }
+
+        .menu>li:hover {
+            background-color: red;
+        }
+
+        .menu>li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu>li>.menu-child {
+            position: absolute;
+            display: flex;
+            top: 100%;
+            left: 0;
+            list-style: none;
+            display: none;
+        }
+
+        .menu>li:hover>.menu-child {
+            dislay: block;
+            display: flex;
+        }
+
+        .menu>li>.menu-child>li {
+            background-color: red;
+            padding: 20px;
+        }
+
+        .menu>li>.menu-child>li:hover {
+            background-color: rgb(146, 59, 59);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>File Edit View Favorite Tool Help</span>
+    </div>
+    <hr>
+    <br>
+
+    <ul class="menu">
+        <li><a href="#">Chính trị - xã hội</a></li>
+        <li>
+            <a href="#">Thế giới</a>
+            <ul class="menu-child">
+                <li><a href="#">Thư viện pháp luật</a></li>
+                <li><a href="#">Sức khoẻ</a></li>
+                <li><a href="#">Pháp luật</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Nhịp sống trẻ</a></li>
+        <li><a href="#"> Giáo dục </a></li>
+        <li><a href="">Kinh tế</a></li>
+
+    </ul>
+</body>
+
+</html>
